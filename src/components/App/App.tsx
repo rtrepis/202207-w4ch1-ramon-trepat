@@ -1,7 +1,20 @@
 import React from "react";
+import Man from "../../types/interface";
 import Card from "../Card/Card";
 import "./App.css";
+
 const App = () => {
+  const man1: Man = {
+    id: 1,
+    name: "Bertin Osborne",
+    status: "Alive",
+    profession: "Youtuber",
+    twitter: "@osbourne",
+    picture: "bertin.jpg",
+    alternativeText: "Osbourne pointing at you",
+    selected: true,
+  };
+
   return (
     <div className="container">
       <header className="main-header">
@@ -13,7 +26,15 @@ const App = () => {
       </section>
       <main className="main">
         <ul className="gentlemen">
-          <Card />
+          <Card
+            name={man1.name}
+            status={man1.status}
+            profession={man1.profession}
+            twitter={man1.twitter}
+            picture={man1.picture}
+            alternativeText={man1.alternativeText}
+          />
+
           <li className="gentleman">
             <div className="gentleman__avatar-container">
               <img
