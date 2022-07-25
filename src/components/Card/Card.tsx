@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
 interface ManProp {
   name: string;
   status: string;
@@ -23,7 +25,9 @@ const Card = ({
           src={`img/${picture}`}
           alt={alternativeText}
         />
-        <span className="gentleman__initial">{name[0].toUpperCase()}</span>
+        <span className="gentleman__initial">
+          {name.includes("The") ? name[4].toUpperCase() : name[0].toUpperCase()}
+        </span>
       </div>
       <div className="gentleman__data-container">
         <h2 className="gentleman__name">{name}</h2>
@@ -40,8 +44,11 @@ const Card = ({
           </li>
         </ul>
       </div>
-      <i className="icon gentleman__icon fas fa-check"></i>
-      <i className="icon gentleman__icon gentleman__icon--delete fas fa-times"></i>
+      <FontAwesomeIcon
+        className="icon gentleman__icon gentleman__icon--delete"
+        icon={faTimes}
+      />
+      <FontAwesomeIcon className="icon gentleman__icon fas " icon={faCheck} />
     </li>
   );
 };
