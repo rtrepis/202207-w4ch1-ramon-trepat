@@ -1,4 +1,3 @@
-import React from "react";
 import Man from "../../types/interface";
 import Card from "../Card/Card";
 import "./App.css";
