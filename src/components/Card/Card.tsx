@@ -23,7 +23,9 @@ const Card = ({
           src={`img/${picture}`}
           alt={alternativeText}
         />
-        <span className="gentleman__initial">{name[0].toUpperCase()}</span>
+        <span className="gentleman__initial">
+          {name.includes("The") ? name[4].toUpperCase() : name[0].toUpperCase()}
+        </span>
       </div>
       <div className="gentleman__data-container">
         <h2 className="gentleman__name">{name}</h2>
