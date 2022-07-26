@@ -1,3 +1,5 @@
+import Button from "../Button/Button";
+
 const Info = (): JSX.Element => {
   return (
     <>
@@ -6,7 +8,7 @@ const Info = (): JSX.Element => {
       </header>
       <section className="controls">
         <p className="info">0 gentlemen pointing at you</p>
-        <button className="button button--select">Select all</button>
+        <Button text="Select all" css="button button--select" />
       </section>
     </>
   );
