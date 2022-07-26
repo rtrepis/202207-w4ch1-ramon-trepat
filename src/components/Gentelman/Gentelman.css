@@ -70,3 +70,14 @@
 .gentleman:hover .gentleman__avatar {
   transform: scaleX(-100%);
 }
+
+.icon {
+  background-color: var(--background-small-items);
+  border-radius: 50%;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
