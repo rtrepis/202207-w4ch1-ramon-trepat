@@ -1,6 +1,7 @@
 interface TextProps {
   text: string;
   css: string;
+  icon?: string;
 }
 
 const Button = ({ text, css }: TextProps): JSX.Element => {

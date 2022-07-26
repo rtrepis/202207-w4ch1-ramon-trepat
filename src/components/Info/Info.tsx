@@ -1,4 +1,5 @@
 import Button from "../Button/Button";
+import "./Info.css";
 
 const Info = (): JSX.Element => {
   return (
