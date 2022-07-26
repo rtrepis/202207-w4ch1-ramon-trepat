@@ -1,5 +1,6 @@
 import Man from "../../types/interface";
-import Card from "../Card/Card";
+import Gentelman from "../Gentelman/Gentelman";
+import Info from "../Info/Info";
 import "./App.css";
 
 const App = () => {
@@ -38,16 +39,10 @@ const App = () => {
 
   return (
     <div className="container">
-      <header className="main-header">
-        <h1 className="main-title">The pointing gentlemen</h1>
-      </header>
-      <section className="controls">
-        <p className="info">0 gentlemen pointing at you</p>
-        <button className="button button--select">Select all</button>
-      </section>
+      <Info />
       <main className="main">
         <ul className="gentlemen">
-          <Card
+          <Gentelman
             name={man1.name}
             status={man1.status}
             profession={man1.profession}
@@ -55,7 +50,7 @@ const App = () => {
             picture={man1.picture}
             alternativeText={man1.alternativeText}
           />
-          <Card
+          <Gentelman
             name={man2.name}
             status={man2.status}
             profession={man2.profession}
@@ -63,7 +58,7 @@ const App = () => {
             picture={man2.picture}
             alternativeText={man2.alternativeText}
           />
-          <Card
+          <Gentelman
             name={man3.name}
             status={man3.status}
             profession={man3.profession}

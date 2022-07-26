@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
+import "./Gentelman.css";
 interface ManProp {
   name: string;
   status: string;
@@ -9,7 +10,7 @@ interface ManProp {
   alternativeText: string;
 }
 
-const Card = ({
+const Gentelman = ({
   name,
   status,
   profession,
@@ -53,4 +54,4 @@ const Card = ({
   );
 };
 
-export default Card;
+export default Gentelman;
