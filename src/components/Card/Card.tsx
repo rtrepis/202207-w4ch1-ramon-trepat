@@ -48,6 +48,7 @@ const Card = ({
         className="icon gentleman__icon gentleman__icon--delete"
         icon={faTimes}
       />
+
       <FontAwesomeIcon className="icon gentleman__icon fas " icon={faCheck} />
     </li>
   );
